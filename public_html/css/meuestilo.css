@@ -1,0 +1,24 @@
+.coluna1 {text-align: right}
+.coluna2 {text-align: left}
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+p { 
+    font-size: 14pt;
+    font-weight: bold;
+    text-align: center;
+    color: red;
+    font-family: "Comic Sans MS";
+}
+.cSubmit {
+    border: none;
+    background-color: greenyellow;
+    width: 70px;
+    height: 40px;
+     border-radius: 10px;        
+}
+
+.cSubmit:hover {
+    background-color: green;
+}

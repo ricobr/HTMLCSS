@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Formulario</title>
+        <meta charset="UTF-8">
+        <style>
+            body {
+                background-color: pink;
+            }
+            table {
+                background-color: lightblue
+            }
+            tr, td {
+                text-align: left
+            }
+            .col1 {
+                text-align: right;
+            }
+                
+            
+        </style>
+    </head>
+    <body>
+        <form name="form1" method="get" action="">
+            <table border="1" align="center" widh="60%">
+                <tr>
+                    <td class="col1">Nome: </td>
+                    <td colspan="2"> <input type="text" name="nome" /></td>
+                </tr>
+                <tr>
+                    <td class="col1">Nascimento: </td>
+                    <td colspan="2"> <input type="date" name="niver" /></td>
+                </tr>
+                <tr>
+                    <td class="col1">Filhos: </td>
+                    <td><input type="number" min="0" max="5" name="filhos" /></td>
+                </tr>
+                <tr>
+                    <td class="col1">Satisfação: </td>
+                    <td colspan="2"> <input type="range" min="0" max="5" name="nivel"/></td>
+                </tr>
+                <tr>
+                    <td class="col1">Preferencias:</td>
+                    <td colspan="2">  
+                        <input type="checkbox" name="futebol" checked/>Futebol<br/>
+                        <input type="checkbox" name="cinema" />Cinema<br/>
+                        <input type="checkbox" name="praia" />Praia<br/>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col1">Sexo:</td>
+                    <td colspan="2">  
+                        <input type="radio" name="sexo"/>Masculino<br/>
+                        <input type="radio" name="sexo"/>Feminino<br/>
+                    </td>
+                </tr>
+
+                <td class="col1">Cidade:</td>
+                    <td colspan="2">  
+                        <select>
+                            <option value="nat">Natal</option>
+                            <option value="jpa">João Pessoa</option>    
+                            <option value="rec">Recife</option>    
+                            <option value="for">Fortaleza</option>    
+                        </select>
+                    </td>
+                </tr>
+                
+                <td class="col1">Observações:</td>
+                    <td colspan="2">  
+                        <textarea name="obs" cols="50" rows="6">Seu texto aqui</textarea>
+                    </td>
+                </tr>
+                <td>
+                    <input type="button" value="Botão"/>
+                    <input type="reset" value="Limpar"/>
+                    <input type="submit" value="Enviar"/>       
+                </td>
+            </table>
+        </form>
+    </body>
+</html>
